@@ -30,14 +30,14 @@ form.addEventListener('submit', function(event) {
             "requestedShipment": {
               "shipper": {
                 "address": {
-                  //"postalCode": `${senderZip}`,
+                  "postalCode": `${senderZip}`,
                   "postalCode": '02155',
                   "countryCode": "US"
                 }
               },
               "recipient": {
                 "address": {
-                  //"postalCode": `${receiverZip}`,
+                  "postalCode": `${receiverZip}`,
                   "postalCode": '02155',
                   "countryCode": "US"
                 }
