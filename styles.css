@@ -37,3 +37,30 @@ input{
     font-family: 'Futura';
     text-shadow: none;
 }
+
+.logo {
+    width: 140px;
+    height: 100px;
+    top: -10px;
+    left: 10px;
+    /*border: 4px solid #333;*/
+    position: fixed;
+    display:block;
+}
+.main-body {
+    margin-top: 10%;
+}
+
+.rate-form {
+    
+    width:500px;
+    background: rgba(0,0,0,0.8);
+    backdrop-filter: saturate(300%) blur(100px);
+  }
+  
+  /*@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .rate-form {
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }

@@ -20,7 +20,7 @@ form.addEventListener('submit', function(event) {
             //'Access-Control-Allow-Headers': 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers',
             'Content-Type': 'application/json',
             'X-locale': 'en_US',
-            'Authorization': '',
+            'Authorization': 'l7a9318d71e9a24284a9c618b425fe6264',
         },
 
         body: JSON.stringify ({
