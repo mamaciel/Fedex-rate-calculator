@@ -10,7 +10,7 @@ body{
 h1 {
     font-family: 'Futura';
     color: #FF6600;
-  }
+}
 
 label{
     display: flex;
@@ -27,13 +27,13 @@ input{
     border-radius: 10px;
 }
 
-.submit {
+.submitButt {
     background: #FF6600;
     color: #ffffff;
     border-style: outset;
     border-color: #000000;
-    height: 50px;
-    width: 100px;
+    height: 40px;
+    width: 130px;
     font-family: 'Futura';
     text-shadow: none;
 }
@@ -41,26 +41,24 @@ input{
 .logo {
     width: 140px;
     height: 100px;
-    top: -10px;
-    left: 10px;
-    /*border: 4px solid #333;*/
-    position: fixed;
-    display:block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
+
 .main-body {
-    margin-top: 10%;
+    margin-top: 6%;
 }
 
 .rate-form {
-    
     width:500px;
-    background: rgba(0,0,0,0.8);
+    background: rgba(255, 255, 255, 0.15);
     backdrop-filter: saturate(300%) blur(100px);
-  }
-  
-  /*@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
-    .rate-form {
-      -webkit-backdrop-filter: blur(10px);
-      backdrop-filter: blur(10px);
-    }
-  }
+    position: relative;
+    width: 50%;
+    height: 1000px;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(5px);
+}

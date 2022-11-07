@@ -9,10 +9,50 @@ form.addEventListener('submit', function(event) {
     var weight = document.getElementById("weight").value;
 
     console.log(senderZip, receiverZip, weight);
+  
+    var input = {
+      "grant_type": "client_credentials",
+      "client_id": "l7a9318d71e9a24284a9c618b425fe6264",
+      "client_secret": "9f6be83133aa4f3284def477b8fad897"
+    }
+
+    var data = JSON.stringify(input)
+  
+    var xhr = new XMLHttpRequest();
+    xhr.addEventListener("readystatechange", function () {
+      if (this.readyState === 4) {
+        console.log(this.responseText);
+      }
+    });
     
-    fetch('https://apis-sandbox.fedex.com/rate/v1/rates/quotes', {
+
+    xhr.open("POST", "https://apis-sandbox.fedex.com/oauth/token");
+    xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+    xhr.send(data);
+
+    })
+    /*
+    var payload = {
+      "grant_type": "client_credentials",
+      "client_id": "l7a9318d71e9a24284a9c618b425fe6264",
+      "client_secret": "9f6be83133aa4f3284def477b8fad897"
+    }
+
+    fetch('https://apis-sandbox.fedex.com/oauth/token', {
+      method: 'POST',
+      mode: 'cors',
+      body: JSON.stringify(payload),
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded"
+        
+
+      }
+    })
+
+    
+    /*fetch('https://apis-sandbox.fedex.com/rate/v1/rates/quotes', {
         method: 'POST',
-        mode: 'no-cors',
+        mode: 'cors',
         headers: {
             //'Access-Control-Allow-Origin': '*',
             //'Access-Control-Allow-Credentials': 'true',
@@ -64,5 +104,5 @@ form.addEventListener('submit', function(event) {
     .then(data => console.log(data))
     .catch(error => console.log('ERROR'))
 
+*/
 
-})
